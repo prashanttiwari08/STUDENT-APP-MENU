@@ -19,7 +19,9 @@ export default function Register() {
             alert(res.data.message);
             navigate("/");
         } catch (err) {
-            alert(err.response?.data?.message || "Error");
+            console.error("Register error:", err);
+            const msg = err.response?.data?.message || err.message || "Error";
+            alert(msg);
         }
     };
 

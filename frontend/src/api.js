@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const API = axios.create({
-    baseURL: "https://student-app-menu.onrender.com/api"
-});
+const baseURL = import.meta.env.VITE_API_URL || "https://student-app-menu.onrender.com/api";
+
+const API = axios.create({ baseURL });
 
 // Attach token automatically
 API.interceptors.request.use((req) => {

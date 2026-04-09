@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Register from "./pages/Register";
-import Login from "./pages/login";
-import Dashboard from "./pages/Dashboard";
-import ProtectedRoute from "./components/ProtectedRoute";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Register from "./pages/Register"
+import Login from "./pages/Login"
+import Dashboard from "./pages/Dashboard"
+import ProtectedRoute from "./components/ProtectedRoute"
 
 function App() {
     return (
